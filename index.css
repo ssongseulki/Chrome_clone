@@ -2,15 +2,67 @@ body {
   background-color: rgb(53, 52, 59);
   color: rgb(53, 52, 59);
 }
-btn {
-  cursor: pointer;
+ul,
+li {
+  list-style: none;
 }
-
+.js-clock {
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+input::placeholder {
+  color: white;
+  text-align: center;
+}
+.user-name {
+  color: white;
+  border-style: none;
+  border-bottom: white solid 1px;
+  background-color: rgba(240, 248, 255, 0);
+  font-size: 1.5em;
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
 .form,
 .greetings {
   display: none;
+  position: absolute;
+  top: 45%;
+  left: 45%;
 }
-
+.js-greetings {
+  color: white;
+  font-size: 1.8em;
+}
+.write-ToDo {
+  color: white;
+  border-style: none;
+  border-bottom: white solid 1px;
+  background-color: rgba(240, 248, 255, 0);
+  font-size: 1.2em;
+  position: absolute;
+  top: 55%;
+  left: 43%;
+}
+.js-toDoList {
+  color: white;
+  font-size: 1.1em;
+  position: absolute;
+  top: 60%;
+  left: 41%;
+}
+button {
+  background-color: rgba(240, 248, 255, 0);
+  border: none;
+  cursor: pointer;
+}
 .showing {
   display: block;
 }
@@ -31,4 +83,13 @@ btn {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+  filter: brightness(70%);
+}
+.js-weather {
+  color: white;
+  font-size: 1.2em;
+  font-style: italic;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
