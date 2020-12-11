@@ -1,6 +1,7 @@
 body {
   background-color: rgb(53, 52, 59);
   color: rgb(53, 52, 59);
+  font-family: "Noto Sans KR", sans-serif;
 }
 ul,
 li {
@@ -37,7 +38,7 @@ input::placeholder {
   display: none;
   position: absolute;
   top: 45%;
-  left: 44%;
+  left: 45%;
 }
 .js-greetings {
   color: white;
@@ -64,6 +65,7 @@ button {
   background-color: rgba(240, 248, 255, 0);
   border: none;
   cursor: pointer;
+  outline: none;
 }
 .showing {
   display: block;
@@ -94,4 +96,34 @@ button {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .js-clock {
+    font-size: 2.8em;
+    position: absolute;
+    top: 15%;
+    left: 17%;
+  }
+  .user-name {
+    position: absolute;
+    top: 45%;
+    left: 18%;
+  }
+  .greetings {
+    font-size: 1.5em;
+    position: absolute;
+    top: 40%;
+    left: 33%;
+  }
+  .write-ToDo {
+    position: absolute;
+    top: 57%;
+    left: 24%;
+  }
+  .js-toDoList {
+    position: absolute;
+    top: 60%;
+    left: 18%;
+  }
 }
