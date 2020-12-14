@@ -1,10 +1,8 @@
 html,
 body {
   height: 100%;
-  min-height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 body {
   background-color: rgb(53, 52, 59);
@@ -23,13 +21,11 @@ li {
   align-items: center;
   justify-content: center;
   height: 100%;
-  min-height: 100%;
-  width: 100%;
 }
 
 .js-clock {
   color: white;
-  font-size: 2em;
+  font-size: 3em;
 }
 
 input[type="text"]:focus {
@@ -115,7 +111,7 @@ button {
   right: 15px;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .js-clock {
     font-size: 2em;
   }
@@ -126,4 +122,4 @@ button {
     width: 200px;
     height: 150px;
   }
-} */
+}
