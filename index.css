@@ -1,8 +1,10 @@
 html,
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
+  position: fixed;
 }
 body {
   background-color: rgb(53, 52, 59);
