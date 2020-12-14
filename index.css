@@ -64,6 +64,7 @@ input::placeholder {
   font-size: 1.1em;
   width: 200px;
   height: 200px;
+  min-height: 200px;
   overflow: scroll;
   -ms-overflow-style: none;
 }
