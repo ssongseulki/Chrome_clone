@@ -1,3 +1,9 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 body {
   background-color: rgb(53, 52, 59);
   color: rgb(53, 52, 59);
@@ -7,13 +13,23 @@ ul,
 li {
   list-style: none;
 }
+
+.chrome {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
 .js-clock {
   color: white;
   font-size: 3em;
-  position: absolute;
+  /* position: absolute;
   top: 25%;
-  left: 40%;
+  left: 40%; */
 }
+
 input[type="text"]:focus {
   outline: none;
 }
@@ -27,18 +43,19 @@ input::placeholder {
   border-bottom: white solid 1px;
   background-color: rgba(240, 248, 255, 0);
   font-size: 1.5em;
-  position: absolute;
+  margin-bottom: 50px;
+  /* position: absolute;
   top: 50%;
-  left: 41%;
+  left: 41%; */
 }
 .form {
   display: none;
 }
 .greetings {
   display: none;
-  position: absolute;
+  /* position: absolute;
   top: 45%;
-  left: 45%;
+  left: 45%; */
 }
 .js-greetings {
   color: white;
@@ -50,16 +67,26 @@ input::placeholder {
   border-bottom: white solid 1px;
   background-color: rgba(240, 248, 255, 0);
   font-size: 1.2em;
-  position: absolute;
+  /* position: absolute;
   top: 57%;
-  left: 43%;
+  left: 43%; */
 }
 .js-toDoList {
   color: white;
   font-size: 1.1em;
-  position: absolute;
+  width: 200px;
+  height: 200px;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  /* position: absolute;
   top: 60%;
-  left: 41%;
+  left: 41%; */
+}
+.js-toDoList::-webkit-scrollbar {
+  display: none;
+}
+.js-toDoList > li {
+  padding: 6px;
 }
 button {
   background-color: rgba(240, 248, 255, 0);
@@ -100,30 +127,13 @@ button {
 
 @media screen and (max-width: 768px) {
   .js-clock {
-    font-size: 2.8em;
-    position: absolute;
-    top: 15%;
-    left: 17%;
+    font-size: 2em;
   }
   .user-name {
-    position: absolute;
-    top: 45%;
-    left: 18%;
-  }
-  .greetings {
-    font-size: 1.5em;
-    position: absolute;
-    top: 40%;
-    left: 33%;
-  }
-  .write-ToDo {
-    position: absolute;
-    top: 57%;
-    left: 24%;
+    margin-bottom: 30px;
   }
   .js-toDoList {
-    position: absolute;
-    top: 60%;
-    left: 18%;
+    width: 200px;
+    height: 150px;
   }
 }
