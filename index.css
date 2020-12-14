@@ -25,9 +25,6 @@ li {
 .js-clock {
   color: white;
   font-size: 3em;
-  /* position: absolute;
-  top: 25%;
-  left: 40%; */
 }
 
 input[type="text"]:focus {
@@ -44,18 +41,12 @@ input::placeholder {
   background-color: rgba(240, 248, 255, 0);
   font-size: 1.5em;
   margin-bottom: 50px;
-  /* position: absolute;
-  top: 50%;
-  left: 41%; */
 }
 .form {
   display: none;
 }
 .greetings {
   display: none;
-  /* position: absolute;
-  top: 45%;
-  left: 45%; */
 }
 .js-greetings {
   color: white;
@@ -67,9 +58,6 @@ input::placeholder {
   border-bottom: white solid 1px;
   background-color: rgba(240, 248, 255, 0);
   font-size: 1.2em;
-  /* position: absolute;
-  top: 57%;
-  left: 43%; */
 }
 .js-toDoList {
   color: white;
@@ -78,9 +66,6 @@ input::placeholder {
   height: 200px;
   overflow: scroll;
   -ms-overflow-style: none;
-  /* position: absolute;
-  top: 60%;
-  left: 41%; */
 }
 .js-toDoList::-webkit-scrollbar {
   display: none;
