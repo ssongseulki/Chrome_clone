@@ -17,7 +17,6 @@ li {
 
 .chrome {
   display: flex;
-  /* flex-flow: column wrap; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -68,21 +67,21 @@ input::placeholder {
   font-size: 1.2em;
 }
 .js-toDoList {
-  /* color: white;
-  font-size: 1.1em;
-  width: 200px;
-  height: 200px;
-  overflow: scroll;
-  -ms-overflow-style: none; */
   color: white;
   font-size: 1.1em;
-  height: 400px;
-  overflow: scroll;
+  height: 250px;
+  overflow-y: scroll;
   padding: 0;
-  -ms-overflow-style: none;
 }
 .js-toDoList::-webkit-scrollbar {
-  display: none;
+  /* display: none; */
+  width: 10px;
+}
+.js-toDoList::-webkit-scrollbar-track {
+  background-color: rgba(240, 248, 255, 0);
+}
+.js-toDoList::-webkit-scrollbar-thumb {
+  background-color: rgba(219, 216, 216, 0.603);
 }
 .js-toDoList > li {
   padding: 6px;
@@ -132,7 +131,6 @@ button {
     margin-bottom: 30px;
   }
   .js-toDoList {
-    /* width: 200px; */
     height: 200px;
   }
 }
