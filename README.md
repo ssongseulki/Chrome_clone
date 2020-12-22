@@ -7,7 +7,7 @@
 - date() 내장 객체 사용    
 - setInterval 함수로 1초마다 주기적으로 업데이트    
      
-#### 2. 인사(Greetiongs)         
+#### 2. 인사(Greetings)         
 - Local Storage가 null일 경우 이름 입력 가능           
 - Local Storage에 저장된 이름이 있으면 화면에 보여줌       
           
